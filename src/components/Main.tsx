@@ -7,7 +7,11 @@ import Footer from "./footer/Footer";
 import config from "../siteconfig";
 
 const Main: React.FC = () => {
-  const [postsList, setPostsList] = useState<PostsList>();
+  const [postsList, setPostsList] = useState<PostsList>({
+    updated: "",
+    count: 0,
+    posts: [],
+  });
 
   useEffect(() => {
     PostHelper.getPostList().then((data) => {
@@ -30,7 +34,7 @@ const Main: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
