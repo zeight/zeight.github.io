@@ -1,0 +1,74 @@
+@use "../../styles/fonts" as fonts;
+@use "../../styles/variables" as vars;
+@use "sass:math";
+
+.postPage {
+  .postHeader {
+    margin-bottom: fonts.$size-xxl * 1.5;
+
+    h1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  p {
+    // font-size: fonts.$size-l;
+    margin: 0 0 2.5rem 0;
+  }
+
+  code {
+    color: vars.$code-textcolor;
+    background-color: vars.$code-background;
+    border-radius: math.div(vars.$radius, 2);
+    padding: 3px;
+  }
+
+  blockquote {
+    padding: 3rem 2rem;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(vars.$quote-background, 0),
+      rgba(vars.$quote-background, 0.2)
+    );
+    color: vars.$quote-textcolor;
+    border-radius: vars.$radius;
+    font-size: fonts.$size-l;
+    font-style: italic;
+    font-weight: 500;
+
+    margin-left: 2rem;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '"';
+      font-size: 8rem;
+      top: -4rem;
+      left: -3rem;
+      color: vars.$quote-background;
+    }
+  }
+
+  pre {
+    div {
+      border-radius: vars.$radius;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .postHeader {
+    h1 {
+      font-size: fonts.$size-l;
+      line-height: fonts.$size-l * 1.5;
+    }
+  }
+}

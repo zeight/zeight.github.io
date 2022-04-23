@@ -1,0 +1,27 @@
+// $body-background: #131526;
+// $body-background-light: #3f3f3f;
+// $accent-color: #F43E5C; // #305cff /à/ff4545
+// $link-color: #3ef48d;
+// $text-color: #bababa;
+
+//Colors
+$body-background: #1f2028; //Linen
+$accent-color: #3ef48d; //Grass
+$link-color: #3ef48d;
+$text-color: #a9adc1;
+$headers-color: #ffffff;
+$radius: 1rem;
+
+$selection-color: #000000;
+$selection-background: #e5ff00;
+
+//Table
+$border-color: $text-color;
+
+//Code single line
+$code-background: lighten($body-background,10);
+$code-textcolor: $link-color;
+
+//Quote
+$quote-background: rgba($text-color, .1);
+$quote-textcolor: $text-color;

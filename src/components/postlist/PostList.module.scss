@@ -1,0 +1,41 @@
+@use "../../styles/fonts" as fonts;
+@use "../../styles/variables" as vars;
+
+.postList{
+
+  .row{
+    border: 1px solid greenyellow;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+
+    li.listItem{
+      list-style: none;
+      margin: 0 0 fonts.$size-xxl*1.3 0;
+
+      .postDate{
+        display: block;
+        font-size: fonts.$size-s;
+      }
+
+      .postLink{
+        color: vars.$headers-color;
+        font-family: fonts.$header-family;
+        font-size: fonts.$size-l;
+        line-height: fonts.$size-l;
+        font-weight: 500;
+
+        &:hover{
+          color: vars.$link-color;
+        }
+      }
+
+      .abstract{
+        font-size: fonts.$size-base;
+      }
+}
+  }
+}
+

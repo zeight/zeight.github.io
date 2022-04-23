@@ -1,0 +1,16 @@
+@use "../../styles/fonts" as fonts;
+@use "../../styles/variables" as vars;
+
+.footer{
+    color: vars.$headers-color;
+    border-top: 1px solid rgba(vars.$quote-background,.1);
+
+    .copyright{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    span, a{
+        font-size: fonts.$size-s;
+        line-height: fonts.$size-base;
+    }
+}

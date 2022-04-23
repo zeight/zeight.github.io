@@ -1,0 +1,36 @@
+@use "../../styles/fonts" as fonts;
+@use "../../styles/variables" as vars;
+
+.header{
+
+  height: 10rem;
+
+  .headerLogo{
+    //max-width: 2rem;
+  }
+
+  a, a:link, a:visited{
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: none ;
+    }
+  }
+
+  h1{
+    display: inline;
+    font-size: fonts.$size-xl;
+    line-height: fonts.$size-xl;
+    font-family: fonts.$header-family;
+    color: vars.$accent-color;
+    padding: 0.5em 0 0.3em 0;
+
+    // @supports (--css: variables) {
+    //   background: linear-gradient(to right, #45BCFF, #FF4545);
+    //   color: transparent;
+    //   -webkit-background-clip: text;
+    //   background-clip: text;
+    // }
+
+  }
+}

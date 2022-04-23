@@ -1,0 +1,14 @@
+@use "../../styles/fonts" as fonts;
+@use "../../styles/variables" as vars;
+
+.navigation{
+  a, a:link, a:visited{
+    font-size: fonts.$size-s;
+    color: vars.$accent-color;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
