@@ -34,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postlist": "node ./build-postlist.js && cp ./src/posts/postList.json ./public/postList.json && cp ./src/notes/notesList.json ./public/notesList.json",
-    "predeploy": "node ./build-postlist.js && npm run build && cp ./nojekyll ./build/.nojekyll",
+    "predeploy": "node ./build-postlist.js && npm run build && cp .nojekyll ./build/.nojekyll",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
