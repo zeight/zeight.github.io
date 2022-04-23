@@ -62,7 +62,7 @@ const Post: React.FC = () => {
       <article className="container">
         <div className={`row ${styles.postHeader}`}>
           <div className="col-12">
-            {frontMatter && (<h1>{frontMatter?.title}</h1>)}
+            {frontMatter && <h1>{frontMatter?.title}</h1>}
           </div>
           <time className="col-12">
             {frontMatter && PostHelper.convertDateToLocale(frontMatter?.date)}
