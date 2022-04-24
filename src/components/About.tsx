@@ -8,13 +8,13 @@ const About: React.FC = () => {
     <div className="main">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Zeight Frontend Developer</title>
+        <title>Andrea Zotti Frontend Developer</title>
         <link rel="canonical" href="https://zeight.github.io" />
       </Helmet>
       <Header />
       <section className="container">
         <div className="row">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <h1>
               (Me) Andrea, <br />
               Freelance Frontend Web Developer
@@ -24,11 +24,12 @@ const About: React.FC = () => {
         <div className="row">
           <div className="col-12">
             <p>
-              Sono un <strong>frontend developer freelance</strong>, da un paio d'anni mi dedico esclusivamente a questo. 
-              In una vita precedente sono stato un project manager e da sempre un web
-              developer. Oggi lavoro principalmente in <strong>React</strong>, più occasionalmente in React Native e{" "}
-              <strong>Angular</strong>, in ogni caso sempre con javascript e{" "}
-              <strong>typescript</strong>.
+              Sono un <strong>frontend developer freelance</strong>, da un paio
+              d'anni mi dedico esclusivamente a questo. In una vita precedente
+              sono stato un project manager e da sempre un web developer. Oggi
+              lavoro principalmente in <strong>React</strong>, più
+              occasionalmente in React Native e <strong>Angular</strong>, in
+              ogni caso sempre con javascript e <strong>typescript</strong>.
             </p>
             <p>
               Mi sono sempre ritenuto un{" "}
@@ -39,8 +40,9 @@ const About: React.FC = () => {
               >
                 front of the frontend
               </a>
-              , più performante sulla parte di pura UI, UX e
-              layout, ma il frontend è un mondo vasto e interessante del quale vale la pena conoscere il più possibile.
+              , più performante sulla parte di pura UI, UX e layout, ma il
+              frontend è un mondo vasto e interessante del quale vale la pena
+              conoscere il più possibile.
             </p>
           </div>
         </div>
@@ -50,8 +52,9 @@ const About: React.FC = () => {
           <div className="col-12">
             <h2>Questo blog</h2>
             <p>
-              Già da molto tempo ho scoperto che il modo migliore per imparare qualcosa è
-              arrivare a saperne abbastanza per poterlo spiegare ad altri.
+              Già da molto tempo ho scoperto che il modo migliore per imparare
+              qualcosa è arrivare a saperne abbastanza per poterlo spiegare ad
+              altri.
             </p>
             <p>
               Quando si è in grado di far comprendere un'idea con un linguaggio
