@@ -1,23 +1,25 @@
 @use "../../styles/fonts" as fonts;
 @use "../../styles/variables" as vars;
 
-.header{
+.header {
+  background: vars.$body-background;
+  // z-index: 1000;
 
-  height: 10rem;
-
-  .headerLogo{
+  .headerLogo {
     //max-width: 2rem;
   }
 
-  a, a:link, a:visited{
+  a,
+  a:link,
+  a:visited {
     text-decoration: none;
 
-    &:hover{
-      text-decoration: none ;
+    &:hover {
+      text-decoration: none;
     }
   }
 
-  h1{
+  h1 {
     display: inline;
     font-size: fonts.$size-xl;
     line-height: fonts.$size-xl;
@@ -31,6 +33,5 @@
     //   -webkit-background-clip: text;
     //   background-clip: text;
     // }
-
   }
 }

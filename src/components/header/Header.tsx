@@ -12,7 +12,9 @@ const Header: React.FC = () => {
       <div className="row">
         <div className="col-8 col-md-6 p-2">
           <Link to="/">
-            <h1 className={styles.logo} data-text={config.AUTHOR}>{config.AUTHOR}</h1>
+            <h1 className={styles.logo} data-text={config.AUTHOR}>
+              {config.AUTHOR}
+            </h1>
           </Link>
         </div>
         <div className="col-4 col-md-6 d-flex flex-column justify-content-center">

@@ -7,14 +7,14 @@
   color: vars.$selection-color;
 }
 
-html{
+html {
   min-height: 100vh;
   background-color: vars.$body-background;
-  // background-image: url('./assets/img/noise_reddish_50.png');  
+  // background-image: url('./assets/img/noise_reddish_50.png');
   //background-image: url('./assets/img/noise_reddish_50.png'),linear-gradient(90deg, vars.$body-background, vars.$body-background);
   // background-attachment:scroll;
   //background-blend-mode: multiply;
-  
+
   //animation: grainyfilm 0.4s steps(1) infinite;
 
   font-smooth: always;
@@ -26,86 +26,91 @@ html{
   font-family: fonts.$body-family;
   font-size: fonts.$size-base;
   font-weight: 400;
-  color: vars.$text-color; 
-  
-  b, strong{
+  color: vars.$text-color;
+
+  b,
+  strong {
     font-family: fonts.$body-family;
     font-weight: 400;
-    color:  lighten(vars.$text-color,40);
+    color: lighten(vars.$text-color, 40);
   }
 
-
-  .main-container{
+  .main-container {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
-  
 
-  h1, h2,h3,h4,h5{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: fonts.$header-family;
     color: vars.$headers-color;
     padding: 0.5em 0 0.3em 0;
     font-weight: 500;
   }
 
-  h1{
+  h1 {
     font-size: fonts.$size-xxl;
     line-height: fonts.$size-xxl * 1.5;
   }
-  h2, h3, h4{
-    margin: 4rem 0 2rem;
+  h2,
+  h3,
+  h4 {
+    margin: 3rem 0 1rem;
   }
 
-  a, a:visited, a:link{
+  a,
+  a:visited,
+  a:link {
     color: vars.$link-color;
     text-decoration: none;
     @include transitionall;
 
-    &:hover{
-      color: rgba(vars.$link-color, .8);
-      text-decoration:underline;
+    &:hover {
+      color: rgba(vars.$link-color, 0.8);
+      text-decoration: underline;
     }
 
     //@include text-contrast;
   }
 
-  .table-wrapper{
+  .table-wrapper {
     max-width: 100%;
-    overflow-x:scroll;
+    overflow-x: scroll;
     padding-bottom: 1rem;
-    table{
-      border: 1px solid vars.$border-color; 
-      border-collapse: collapse; 
+    table {
+      border: 1px solid vars.$border-color;
+      border-collapse: collapse;
       font-size: fonts.$size-s;
       width: 100%;
-  
-      thead th{
-        color: vars.$body-background;
-        background: vars.$border-color; 
-        border: 1px solid vars.$body-background; 
-        border-bottom-color: vars.$body-background;
-        padding: .5rem 1rem; 
-  
-        &:first-child{
-          border-left-color: vars.$border-color; 
-        }
-  
-        &:last-child{
-          border-right-color: vars.$border-color; 
-        }      
-      }
-  
-      tr td{
-        border: 1px solid vars.$border-color; 
-        padding: 1rem; 
-      }
-    }    
-  }
-  
 
-  img{
-    
+      thead th {
+        color: vars.$body-background;
+        background: vars.$border-color;
+        border: 1px solid vars.$body-background;
+        border-bottom-color: vars.$body-background;
+        padding: 0.5rem 1rem;
+
+        &:first-child {
+          border-left-color: vars.$border-color;
+        }
+
+        &:last-child {
+          border-right-color: vars.$border-color;
+        }
+      }
+
+      tr td {
+        border: 1px solid vars.$border-color;
+        padding: 1rem;
+      }
+    }
+  }
+
+  img {
     max-width: 100%;
     border-radius: vars.$radius;
   }
