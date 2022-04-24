@@ -20,5 +20,18 @@ Il file andrà poi inserito nella root del branch che viene usato per il deploy.
 
 Attenzione che pushare solo questo file potrebbe non essere sufficiente a triggerare una nuova build, per cui è preferibile forzarla con altre modifiche al sorgente.
 
+## Step necessario nel caso si usasse gh-pages
+Rimane un'ultima cosa da fare per evitare ad ogni nuova modifica di dover nuovamente pushare il file. Andrà modificato il comando di deploy nel package.json  aggiungendo un `-t true`, come di seguito:
+
+```json
+//package.json
+
+"scripts": {
+    "deploy": "gh-pages -d build -t true"
+}
+```
+
+
+
 
 

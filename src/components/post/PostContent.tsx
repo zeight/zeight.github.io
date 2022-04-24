@@ -4,8 +4,8 @@ import ReactMarkdown from "react-markdown";
 //https://react-syntax-highlighter.github.io/react-syntax-highlighter/demo/
 //import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 //import { vscDarkPlus as codetheme } from "react-syntax-highlighter/dist/esm/styles/prism";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atomOneDarkReasonable as codetheme } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDarkReasonable as codetheme } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 //Remark plugins
 //? https://github.com/remarkjs/react-markdown
@@ -29,12 +29,13 @@ const PostContent: React.FC<PostContentProps> = (props) => {
           return !inline && match ? (
             //@ts-ignore
             <SyntaxHighlighter
-            codeTagProps={{
-              className: 'hightlighted'
-            }}
-            customStyle={{
-              marginBottom: '3rem'
-            }}
+              codeTagProps={{
+                className: "hightlighted",
+              }}
+              customStyle={{
+                marginBottom: "3rem",
+                paddingLeft: "1rem",
+              }}
               // showLineNumbers={true}
               children={String(children).replace(/\n$/, "")}
               style={codetheme}
@@ -48,9 +49,13 @@ const PostContent: React.FC<PostContentProps> = (props) => {
             </code>
           );
         },
-        table({ node, className, children, ...props }){          
-          return <div className="table-wrapper"><table>{children}</table></div>;
-        }
+        table({ node, className, children, ...props }) {
+          return (
+            <div className="table-wrapper">
+              <table>{children}</table>
+            </div>
+          );
+        },
       }}
     />
   );
