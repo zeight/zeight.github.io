@@ -40,7 +40,7 @@ const About: React.FC = () => {
               >
                 front of the frontend
               </a>
-              , più performante sulla parte di pura UI, UX e layout, ma il
+              , più orientato sulla parte di pura UI, UX e layout, ma il
               frontend è un mondo vasto e interessante del quale vale la pena
               conoscere il più possibile.
             </p>
@@ -58,7 +58,7 @@ const About: React.FC = () => {
             </p>
             <p>
               Quando si è in grado di far comprendere un'idea con un linguaggio
-              semplice ed in modo efficace significa che le basi fondamentali di
+              semplice, in modo efficace, significa che le basi fondamentali di
               questa idea sono parte del proprio bagaglio di conoscenza e, se
               non lo sono all'inizio, è probabile che che vi entreranno nel
               processo.
